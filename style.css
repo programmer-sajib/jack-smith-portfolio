@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header,
+.biography,
+.latest-work,
+.client {
+  width: 100%;
+  height: 100vh;
+}
+body p {
+  color: dimgray;
+}
+.header,
+.biography {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 100%));
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  background: url(images/header-bg.png) no-repeat;
+}
+
+.latest-work h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 50px;
+}
+.latest-work-photos {
+  margin: 5% 0 0 3%;
+  width: 30%;
+  float: left;
+}
+.latest-work-photos img {
+  width: 100%;
+  box-shadow: 10px 10px 40px dimgray;
+  border-radius: 4px;
+}
+.biography {
+  background: url(images/biography-bg.png) no-repeat;
+}
+.latest-work {
+  background: url(images/latest-work-bg.png) no-repeat;
+}
+.client {
+  background: url(images/header-bg.png) no-repeat;
+  background-position: top;
+}
+.header .halfWidth,
+.biography .halfWidth {
+  width: 50%;
+}
+.header .halfWidth h1 {
+  margin-bottom: 40px;
+  font-size: 5rem;
+  color: crimson;
+}
+.header .halfWidth h3 {
+  font-size: 2rem;
+}
+.biography .halfWidth h2 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+.header .halfWidth p {
+  text-align: justify;
+  margin: 10px 0;
+  margin-bottom: 35px;
+}
+.halfWidth img {
+  width: 100%;
+}
+.button {
+  width: max-content;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, rgb(228, 67, 94), crimson);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.header .halfWidth .button {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+.header .halfWidth .button {
+  margin: 30px 0;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.header .halfWidth .button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.biography .halfWidth .button {
+  background-image: linear-gradient(
+    to right,
+    #eb3349 0%,
+    #f45c43 51%,
+    #eb3349 100%
+  );
+}
+.biography .halfWidth .button {
+  margin: 40px 0px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.biography .halfWidth .button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.client div h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 100px 0 6% 0;
+}
+.client h4 {
+  text-align: center;
+  font-weight: 700;
+}
+.client p {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.client .about-text {
+  font-weight: 500;
+  border-radius: 0.8rem;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 30vw;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 5px 5px 40px dimgray;
+}
